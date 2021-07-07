@@ -1,0 +1,206 @@
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.search-city {
+  padding-top: 30px;
+  &__form {
+    margin-bottom: 15px;
+  }
+  &__field {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+    display: flex;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  &-input-wrapper {
+    position: relative;
+  }
+  &__svg-location {
+    position: absolute;
+    top: 30%;
+    left: 17px;
+    display: block;
+  }
+  &__input {
+    padding: 0 54px;
+    width: 280px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 30px;
+  }
+  &__input::placeholder {
+    color: #000000;
+  }
+  &__btn-save {
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    top: 28%;
+    right: 22px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-city {
+    padding-top: 60px;
+    &__input {
+      width: 500px;
+      height: 48px;
+    }
+    &__form {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .search-city {
+    padding-top: 79px;
+    padding-bottom: 92px;
+    &__input {
+      width: 520px;
+    }
+  }
+}
+
+.search-city {
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-list-content {
+      display: flex;
+    }
+  }
+  &__slider-btnPrev {
+    border-radius: 12px;
+    opacity: 0.471;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    transition: opacity 0.2s linear;
+    outline: none;
+    margin-right: 14px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__slider-list-city {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.21;
+    align-items: center;
+    text-decoration-line: underline;
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__slider-list-item {
+    border-radius: 12px;
+    background-color: #102136;
+    opacity: 0.471;
+    padding: 5px 10px 5px 10px;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+    width: 100px;
+
+    &:hover {
+      opacity: 1;
+      white-space: wrap;
+      overflow: none;
+      text-overflow:clip;
+      width: 100%;
+
+    }
+  }
+
+  &__slider-list-content-renove-city__button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    height: 16px;
+    outline: none;
+    border: none;
+  }
+  &__slider-btnNext {
+    border-radius: 12px;
+    opacity: 0.471;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    transition: opacity 0.2s linear;
+    outline: none;
+    margin-left: 14px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+//===========================стили lockal storages======================================
+
+.search-city__slider-list {
+  width: 230px;
+}
+
+.search-city__slider-list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .search-city__slider-list {
+    width: 440px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .search-city__slider-list {
+    width: 450px;
+  }
+}
+
+.search-city__form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}

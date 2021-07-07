@@ -1,0 +1,24 @@
+{{#each this}}
+  <li class='five-days__weather-week-item'>
+    <h3 class='five-days__weather-week-title'>
+      {{week}}
+    </h3>
+    <h4 class='five-days__weather-week-date'>{{month}}</h4>
+    <img src={{icon}} alt='' class='five-days__weather-week-img' />
+    <div class='five-days__weather-week-temperature-block'>
+      <div class='five-days__weather-week-min-max'>
+        <p class='five-days__weather-week-title'>min</p>
+        <p class='five-days__weather-week five-days__weather-week-degrees'>{{temp.TempMin}} &deg</p>
+      </div>
+      <i class='days-list__line days-list__line--mobile'></i>
+      <i class='days-list__line days-list__line--tablet_desktop'></i>
+      <div class='five-days__weather-week-min-max'>
+        <p class='five-days__weather-week-title'>max</p>
+        <p class='five-days__weather-week five-days__weather-week-degrees'>{{temp.TempMax}} &deg</p>
+      </div>
+    </div>
+    <button class='five-days__weather-more-btn' type='button' data-action='{{date}}'>
+      more info
+    </button>
+  </li>
+{{/each}}

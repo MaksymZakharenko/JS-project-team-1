@@ -1,0 +1,33 @@
+.container {
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 67px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 101px;
+  }
+}

@@ -1,0 +1,180 @@
+.date-container {
+  width: 280px;
+  height: 190px;
+  border-radius: 35px;
+  background-color: rgba(16, 33, 54, 0.59);
+  margin: 0 auto;
+  font-weight: 400;
+  padding-top: 30px;
+  margin-bottom: 44px;
+}
+
+.date-container:hover {
+  transition: 200ms linear;
+  background-color: #102136;
+}
+
+.date-day {
+  margin-bottom: 10px;
+
+  padding-left: 110px;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #f7f7f7;
+
+  @media screen and (min-width: 320px) {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.date-month-time {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin: 0 auto 20px;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+    margin-left: 92px;
+  }
+}
+
+.date-month {
+  text-align: right;
+}
+.date-month::after,
+.date-sunrise-time::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #e7e8eb;
+  margin-left: 10px;
+  opacity: 0.4;
+  border: 1px solid #ffffff;
+}
+
+.date-sun {
+  font-size: 14px;
+  display: flex;
+  width: 147px;
+  height: 40px;
+  justify-content: center;
+  padding-bottom: 16px;
+  color: #ffffff;
+
+  @media screen and (min-width: 320px) {
+    margin-left: 52px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 160px;
+  }
+}
+
+.date-sunrise,
+.date-sunset {
+  display: flex;
+  width: 75px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.date-month,
+.date-sunrise {
+  margin-right: 10px;
+}
+.date-time,
+.date-sunset {
+  margin-left: 10px;
+}
+.date-sunrise-icon,
+.date-sunset-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+// ----------------------TABLET
+@media screen and (min-width: 768px) {
+  .date-container {
+    width: 500px;
+    height: 278px;
+    font-weight: 400;
+    padding-top: 50px;
+    margin-bottom: 63px;
+  }
+  .date-day {
+    font-size: 90px;
+    letter-spacing: 1.2;
+  }
+  .date-month {
+    font-size: 18px;
+    letter-spacing: 1.2;
+    margin-right: 40px;
+  }
+  .date-time {
+    margin-left: 0;
+    font-size: 18px;
+    letter-spacing: 1.2;
+  }
+  .date-sunrise {
+    margin-right: 20px;
+    font-size: 18px;
+    letter-spacing: 1.2;
+  }
+  .date-sunset {
+    margin-left: 20px;
+    font-size: 18px;
+    letter-spacing: 1.2;
+  }
+  .date-month-time {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .date-month::after,
+  .date-sunrise-time::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #e7e8eb;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .date-sun {
+    margin-left: 60px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .date-container {
+    bottom: -75px;
+    left: 0px;
+    position: absolute;
+    width: 630px;
+    height: 278px;
+    font-weight: 400;
+    padding-top: 60px;
+    margin-bottom: 44px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-right: 87px;
+  }
+  .date-box {
+    display: flex;
+  }
+  .date-month::after,
+  .date-sunrise-time::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background-color: #e7e8eb;
+    margin-left: 20px;
+  }
+}

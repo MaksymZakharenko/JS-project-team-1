@@ -1,0 +1,403 @@
+.five-days__weather-week-degrees {
+  font-size: 14px;
+}
+.five-days__weather {
+  margin: 0 auto 28px;
+  border-radius: 35px;
+  background-color: rgba(16, 33, 54, 0.8);
+  box-shadow: 0px 8px 43px 0px rgba(16, 33, 54, 0.59);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 14px;
+  }
+}
+
+.five-days__weather-week {
+  margin: 0 auto;
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.five-days__weather-week-title-city {
+  font-size: 18px;
+  font-family: 'Lato';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+.five-days-containeer__scroll {
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    width: 58px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.five-days-containeer__arrow {
+  width: 6px;
+  height: 10px;
+  display: inline-block;
+  opacity: 0.541;
+  cursor: pointer;
+
+  &--hover:hover {
+    opacity: 1;
+  }
+}
+
+.five-days__weather-week-list {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-bottom: 13px;
+  list-style: none;
+  overflow-x: auto;
+  font-size: 13px;
+
+  display: flex;
+  overflow-x: auto;
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .five-days__weather-week-item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+
+      @media (min-width: 320px) {
+        margin-right: 20px;
+      }
+    }
+    @media (min-width: 1280px) {
+      margin-left: -55px;
+    }
+  }
+
+  .five-days__weather-week-title-city {
+    font-size: 12px;
+    font-family: 'Lato';
+    color: rgba(255, 255, 255, 0.541);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .five-days__weather-week-title {
+    opacity: 0.55;
+    font-size: 12px;
+    font-family: 'Lato';
+    text-align: center !important;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .five-days__weather-week-title-active {
+    color: rgb(255, 107, 8);
+    opacity: 1;
+  }
+
+  .five-days__weather-week-date {
+    font-size: 16px;
+    font-family: 'Lato';
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+    }
+  }
+
+  .five-days__weather-week-img {
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  .five-days__weather-week-temperature-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 320px) {
+    .five-days__weather-week-min-max {
+      width: 26px;
+      height: 34px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .five-days__weather-week-min-max {
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  .five-days__weather-week-title-city {
+    font-size: 12px;
+    font-family: 'Lato';
+    color: rgba(255, 255, 255, 0.541);
+    line-height: 0.8;
+    vertical-align: top;
+    margin-bottom: 5px;
+  }
+
+  .five-days__weather-week {
+    font-size: 14px;
+    font-family: 'Lato';
+    color: rgb(255, 107, 8);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+    }
+
+    &-degrees::after {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      vertical-align: top;
+    }
+  }
+
+  .days-list__line {
+    margin: 0 3px;
+
+    &--mobile {
+      background: url(../images/icons/line.png);
+      width: 1px;
+      display: block;
+    }
+
+    &--tablet_desktop {
+      background: url(../images/icons/tablet/line.png);
+      width: 1px;
+      display: none;
+    }
+  }
+
+  .five-days__weather-more-btn {
+    display: block;
+    font-size: 12px;
+    font-family: 'Lato';
+    color: rgba(255, 255, 255, 0.302);
+    text-decoration: underline;
+    text-align: center;
+    border: none;
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    &__active {
+      color: #ffffff;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .padding {
+    padding-bottom: 30px;
+  }
+}
+
+// // TABLET
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hide-Kiev {
+    display: none;
+  }
+  .five-days__weather-week {
+    padding: 40px 35px 0;
+  }
+
+  .five-days__weather-week-title-city {
+    display: none;
+  }
+
+  .hide-scroll {
+    display: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .five-days__weather-week-item {
+    width: 75px;
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+
+  .five-days__weather-week-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .five-days__weather-week-date {
+    font-size: 18px;
+  }
+
+  .five-days__weather-week-temperature-block {
+    width: 75px;
+    margin-bottom: 15px;
+  }
+
+  .five-days__weather-week-min-max {
+    width: 30px;
+  }
+
+  .five-days__weather-week-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .five-days__weather-week {
+    font-size: 18px;
+  }
+
+  .days-list__line {
+    margin: 0 10px;
+
+    &--tablet_desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .five-days__weather-more-btn {
+    font-size: 14px;
+  }
+
+  .hidden-arrow {
+    display: none;
+  }
+}
+
+// // DESKTOP
+
+@media (min-width: 1280px) {
+  .five-days__weather-week {
+    padding: 40px 100px 0px;
+    width: 105%;
+  }
+
+  .five-days__weather-week-title-city {
+    display: none;
+  }
+
+  .five-days-containeer__scroll {
+    display: none;
+  }
+
+  .hidden-arrow {
+    display: none;
+  }
+}
+
+.five-days__weather-week-item {
+  &:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
+.five-days__weather-week-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.five-days__weather-week-date {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.five-days__weather-week-img {
+  margin: 0 auto 15px;
+}
+
+.five-days__weather-week-temperature-block {
+  margin-bottom: 17px;
+}
+
+.five-days__weather-week-min-max {
+  width: 35px;
+}
+
+.five-days__weather-week-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.five-days__weather-week {
+  font-size: 25px;
+}
+.days-list__line {
+  margin: 0 15px;
+
+  &--tablet_desktop {
+    display: block;
+  }
+
+  &--mobile {
+    display: none;
+  }
+}

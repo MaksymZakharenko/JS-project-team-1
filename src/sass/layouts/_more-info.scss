@@ -1,0 +1,246 @@
+.hidden-section {
+  display: none;
+}
+
+.big-margin {
+  margin-bottom: 300px;
+}
+
+.five-days__weather-hour {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 115px;
+  border-radius: 34px;
+
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.five-days__box {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.five-days__weather-hour-list {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.five-days__weather-details {
+  display: flex;
+}
+
+.five-days__central-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-font {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--primary-text-color);
+  opacity: 0.54;
+  display: block;
+}
+
+.temp-text-font {
+  color: var(--accent-text-color);
+  font-size: 18px;
+}
+
+.five-days__text-barometer::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  background-image: url('../images/barometer.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 62%;
+  left: 10%;
+}
+
+.five-days__text-humidity::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  background-image: url('../images/humidity.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 73%;
+  left: 10%;
+}
+
+.five-days__text-wind::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  background-image: url('../images/wind.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 83%;
+  left: 10%;
+}
+
+.five-days__info-list {
+  margin-left: 40px;
+}
+
+.info-list__list-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.five-days__list-item {
+  margin-bottom: 12px;
+}
+
+.five-days__hour-list::-webkit-scrollbar {
+  height: 3px;
+  background: var(--secondary-text-color);
+  opacity: 0.9;
+  border-radius: 30px;
+}
+
+.five-days__hour-list::-webkit-scrollbar-thumb {
+  background: var(--accent-text-color);
+}
+
+.five-days__hour-list {
+  display: flex;
+  overflow-x: auto;
+}
+
+.five-days__hour-list-card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.five-days__hour-list-card {
+  padding-bottom: 30px;
+}
+
+.hide-button {
+  display: none;
+}
+
+.five-days__weather {
+  margin-bottom: 20px;
+}
+
+.white-color {
+  color: var(--primary-text-color);
+}
+
+@media (min-width: 320px) {
+  .five-days__hour-list::-webkit-scrollbar {
+    height: 3px;
+    background: var(--secondary-text-color);
+    opacity: 0.9;
+    border-radius: 30px;
+    width: 30px;
+  }
+
+  .five-days__hour-list::-webkit-scrollbar-thumb {
+    background: var(--accent-text-color);
+  }
+
+  .five-days__more-info-button-box {
+    display: flex;
+  }
+  .five-days__hour-list {
+    display: flex;
+    overflow-x: auto;
+  }
+  .five-days-containeer__scroll {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    width: 58px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .five-days__weather-week {
+    margin: 0 auto;
+  }
+  .five-days__title {
+    display: none;
+  }
+  .five-days__btn-list {
+    padding-top: 71px;
+
+    @media (min-width: 320px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .five-days__title {
+    display: block;
+  }
+  .five-days__box {
+    width: 498px;
+  }
+
+  .five-days__hour-list::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+  }
+
+  .five-days__hour-list::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .show-button {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .next {
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-color: transparent;
+    width: 28px;
+    height: 28px;
+  }
+
+  .prev {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-color: transparent;
+    width: 28px;
+    height: 28px;
+  }
+
+  #left-arrow,
+  #right-arrow {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .five-days__weather-week-title-city {
+    display: none;
+  }
+  .five-days__box {
+    width: 868px;
+  }
+}
